@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Making_schedule</title>
+	<link rel="stylesheet" href="css/making_schedule.css">
+	<script src="https://kit.fontawesome.com/3d990a43fd.js" crossorigin="anonymous"></script>
+	<script> 
+			function inputDate(){
+				let userInput_date = document.querySelector("#userInput_date");
+				let message = document.querySelector("#message");
+
+				sample_date.innerHTML = userInput_date.value;
+				message.innerHTML = "Great! Let's come and make your schedule for today. Please input the date of week.";
+				askingforWeekday.innerHTML = "Day of the week: <input id='userInput_Weekday'> <button onclick = 'inputWeekday()'>Input</button>";
+			}
+		</script>
+	
+		<script> 
+			function inputWeekday(){
+				let userInput_Weekday = document.querySelector("#userInput_Weekday");
+				let message = document.querySelector("#message");
+
+				sample_weekday.innerHTML = "(" + userInput_Weekday.value + ")";
+				message.innerHTML = "Great! Now, please choose weather.";
+				askingforWeather.innerHTML = "Weather:<button onclick='inputWeather_sunny()'>Sunny</button><button onclick='inputWeather_cloudy()'>Cloudy</button><button onclick='inputWeather_rainy()'>Rainy</button>";
+			}
+		</script>
+		
+		
+		<script> 
+			function inputList_1(){
+				let userInputList_1 = document.querySelector("#userInputList_1");
+				let message = document.querySelector("#message");
+
+				list_1.innerHTML = userInputList_1.value;
+				message.innerHTML = "You can add more.";
+				askingforList_2.innerHTML = 'List2:<input id="userInputList_2"><button onclick="inputList_2()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_2(){
+				let userInputList_2 = document.querySelector("#userInputList_2");
+				let message = document.querySelector("#message");
+
+				list_2.innerHTML = userInputList_2.value;
+				message.innerHTML = "You can add more.";
+				askingforList_3.innerHTML = 'List3:<input id="userInputList_3"><button onclick="inputList_3()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_3(){
+				let userInputList_3 = document.querySelector("#userInputList_3");
+				let message = document.querySelector("#message");
+
+				list_3.innerHTML = userInputList_3.value;
+				message.innerHTML = "You can add more.";
+				askingforList_4.innerHTML = 'List4:<input id="userInputList_4"><button onclick="inputList_4()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_4(){
+				let userInputList_4 = document.querySelector("#userInputList_4");
+				let message = document.querySelector("#message");
+
+				list_4.innerHTML = userInputList_4.value;
+				message.innerHTML = "You can add more.";
+				askingforList_5.innerHTML = 'List5:<input id="userInputList_5"><button onclick="inputList_5()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_5(){
+				let userInputList_5 = document.querySelector("#userInputList_5");
+				let message = document.querySelector("#message");
+
+				list_5.innerHTML = userInputList_5.value;
+				message.innerHTML = "You can add more.";
+				askingforList_6.innerHTML = 'List6:<input id="userInputList_6"><button onclick="inputList_6()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_6(){
+				let userInputList_6 = document.querySelector("#userInputList_6");
+				let message = document.querySelector("#message");
+
+				list_6.innerHTML = userInputList_6.value;
+				message.innerHTML = "You can add more.";
+				askingforList_7.innerHTML = 'List7:<input id="userInputList_7"><button onclick="inputList_7()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_7(){
+				let userInputList_7 = document.querySelector("#userInputList_7");
+				let message = document.querySelector("#message");
+
+				list_7.innerHTML = userInputList_7.value;
+				message.innerHTML = "You can add more.";
+				askingforList_8.innerHTML = 'List8:<input id="userInputList_8"><button onclick="inputList_8()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_8(){
+				let userInputList_8 = document.querySelector("#userInputList_8");
+				let message = document.querySelector("#message");
+
+				list_8.innerHTML = userInputList_8.value;
+				message.innerHTML = "You can add more.";
+				askingforList_9.innerHTML = 'List9:<input id="userInputList_9"><button onclick="inputList_9()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_9(){
+				let userInputList_9 = document.querySelector("#userInputList_9");
+				let message = document.querySelector("#message");
+
+				list_9.innerHTML = userInputList_9.value;
+				message.innerHTML = "You can add more.";
+				askingforList_10.innerHTML = 'List10:<input id="userInputList_10"><button onclick="inputList_10()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputList_10(){
+				let userInputList_10 = document.querySelector("#userInputList_10");
+				let message = document.querySelector("#message");
+
+				list_10.innerHTML = userInputList_10.value;
+				message.innerHTML = "Please DO NOT reload the page before you have photo capture this schedule, as it will be all gone.";
+			}
+		</script>
+		<script> 
+			function inputWeather_sunny(){
+				let message = document.querySelector("#message");
+
+				sample_weather.innerHTML = 'Sunny<i class="fa-solid fa-sun"/>';
+				message.innerHTML = "Wonderful! Now, please choose background.";
+				askingforListicon.innerHTML = 'List icon:<button onclick="inputListicon_none()">None</button><button onclick="inputListicon_number()">Number</button><button onclick="inputListicon_square()">Square</button><button onclick="inputListicon_circle()">Circle</button><button onclick="inputListicon_lower_roman()">Lower_roman</button><button onclick="inputListicon_upper_roman()">Upper_roman</button><button onclick="inputListicon_lower_greek()">Lower_greek</button><button onclick="inputListicon_georgian()">Georgian</button><button onclick="inputListicon_hiragana()">Hiragana</button><button onclick="inputListicon_katakana()">Katakana</button><button onclick="inputListicon_korean_hangul_formal()">Korean_hangul_formal</button>';
+			}
+		</script>
+		<script> 
+			function inputWeather_cloudy(){
+				let message = document.querySelector("#message");
+
+				sample_weather.innerHTML = 'Cloudy<i class="fa-solid fa-cloud-sun"></i>';
+				message.innerHTML = "Excellent! Now, you can choose background.";
+				askingforListicon.innerHTML = 'List icon:<button onclick="inputListicon_none()">None</button><button onclick="inputListicon_number()">Number</button><button onclick="inputListicon_square()">Square</button><button onclick="inputListicon_circle()">Circle</button><button onclick="inputListicon_lower_roman()">Lower_roman</button><button onclick="inputListicon_upper_roman()">Upper_roman</button><button onclick="inputListicon_lower_greek()">Lower_greek</button><button onclick="inputListicon_georgian()">Georgian</button><button onclick="inputListicon_hiragana()">Hiragana</button><button onclick="inputListicon_katakana()">Katakana</button><button onclick="inputListicon_korean_hangul_formal()">Korean_hangul_formal</button>';
+			}
+		</script>
+		<script> 
+			function inputWeather_rainy(){
+				let message = document.querySelector("#message");
+
+				sample_weather.innerHTML = 'Rainy<i class="fa-solid fa-cloud-sun-rain"></i>';
+				message.innerHTML = "Let's choose a background.";
+				askingforListicon.innerHTML = 'List icon:<button onclick="inputListicon_none()">None</button><button onclick="inputListicon_number()">Number</button><button onclick="inputListicon_square()">Square</button><button onclick="inputListicon_circle()">Circle</button><button onclick="inputListicon_lower_roman()">Lower_roman</button><button onclick="inputListicon_upper_roman()">Upper_roman</button><button onclick="inputListicon_lower_greek()">Lower_greek</button><button onclick="inputListicon_georgian()">Georgian</button><button onclick="inputListicon_hiragana()">Hiragana</button><button onclick="inputListicon_katakana()">Katakana</button><button onclick="inputListicon_korean_hangul_formal()">Korean_hangul_formal</button>';
+			}
+		</script>
+		<script> 
+			function inputGreen(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundColor= '#D2ECB7';
+				message.innerHTML = "What a great choice! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputPink(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.background= '#FBD9D9';
+				message.innerHTML = "Wonderful! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputPurple(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundColor= '#F9D9FB';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputYellow(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundColor= '#FBFC9F';
+				message.innerHTML = "What a great choice! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputGrey(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundColor= '#DDDDDD';
+				message.innerHTML = "Wonderful! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputLightblue(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundColor= '#CDF0FF';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputPink_to_purple(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.background= 'linear-gradient(45deg, #FBD9D9, #F9D9FB)';
+				message.innerHTML = "What a great choice! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBlue_to_purple(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.background= 'linear-gradient(45deg, #CDE2FF, #F9D9FB)';
+				message.innerHTML = "Wonderful! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputPink_to_white(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.background= 'linear-gradient(90deg, #FBD9D9, #FFFFFF)';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputRilakkuma1(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("rilakkuma1.jpeg")';
+				message.innerHTML = "What a great choice! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputRilakkuma2(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("rilakkuma2.jpeg")';
+				message.innerHTML = "Wonderful! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputRilakkuma3(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("rilakkuma3.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputRilakkuma4(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("rilakkuma4.jpeg")';
+				message.innerHTML = "What a great choice! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputRilakkuma5(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("rilakkuma5.jpeg")';
+				message.innerHTML = "Wonderful! Now, you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground1(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background1.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground2(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background2.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground3(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background3.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground4(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background4.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground5(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background5.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground6(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background6.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground7(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background7.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground8(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background8.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputBackground9(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample").style.backgroundImage= 'url("background9.jpeg")';
+				message.innerHTML = "Brilliant! Now you can input your do list.";
+				askingforList_1.innerHTML = 'List1:<input id="userInputList_1"><button onclick="inputList_1()">Input</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_upper_roman(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'upper-roman';
+				message.innerHTML = "Excellent! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_number(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'decimal';
+				message.innerHTML = "Wonderful! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_lower_roman(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'lower-roman';
+				message.innerHTML = "What a great choice! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_square(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'square';
+				message.innerHTML = "Excellent! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_none(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'none';
+				message.innerHTML = "Great! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_lower_greek(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'lower-greek';
+				message.innerHTML = "Brilliant! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_georgian(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'georgian';
+				message.innerHTML = "Wonderful! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_circle(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'circle';
+				message.innerHTML = "Great! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_hiragana(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'hiragana';
+				message.innerHTML = "Wonderful! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_katakana(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'katakana';
+				message.innerHTML = "What a great choice! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		<script> 
+			function inputListicon_korean_hangul_formal(){
+				let message = document.querySelector("#message");
+
+				document.querySelector("#sample_ol").style.listStyleType= 'korean-hangul-formal';
+				message.innerHTML = "Brilliant! Now, please choose background.";
+				askingforBackground.innerHTML = 'Background:<button onclick="inputGreen()">Green</button><button onclick="inputPink()">Pink</button><button onclick="inputPurple()">Purple</button><button onclick="inputYellow()">Yellow</button><button onclick="inputGrey()">Grey</button><button onclick="inputLightblue()">Lightblue</button><button onclick="inputPink_to_purple()">Pink_to_purple</button><button onclick="inputBlue_to_purple()">Blue_to_purple</button><button onclick="inputPink_to_white()">Pink_to_white</button><button onclick="inputRilakkuma1()">Rilakkuma1</button><button onclick="inputRilakkuma2()">Rilakkuma2</button><button onclick="inputRilakkuma3()">Rilakkuma3</button><button onclick="inputRilakkuma4()">Rilakkuma4</button><button onclick="inputRilakkuma5()">Rilakkuma5</button><button onclick="inputBackground1()">Background1</button><button onclick="inputBackground2()">Background2</button><button onclick="inputBackground3()">Background3</button><button onclick="inputBackground4()">Background4</button><button onclick="inputBackground5()">Background5</button><button onclick="inputBackground6()">Background6</button><button onclick="inputBackground7()">Background7</button><button onclick="inputBackground8()">Background8</button><button onclick="inputBackground9()">Background9</button>';
+			}
+		</script>
+		
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#name">Name</a>
+			<a href="#schedule">Schedule</a>
+			<a href="#sample">Sample</a>
+		</nav>
+	</header>
+
+	<section id="name">
+		<h1>Name</h1>
+		<h3 id="message_name">Please input your name.</h3>
+		<input id="userInput_name">
+		<button onclick="inputName()">Input</button>
+		
+		<script>
+			function inputName(){
+				let userInput_name = document.querySelector("#userInput_name");
+				let message_name = document.querySelector("#message_name");
+
+				message_name.innerHTML = "Hello, " + userInput_name.value + ". Welcome! "+ "Go ahead to make your schedule for today.";
+			}
+		</script>
+	</section>
+	<hr>
+	<section id="schedule">
+		<h1>Schedule</h1>
+		<h3 id="message">Let's start making your own schedule for today! Please input the date of today.</h3>
+
+		<p id="askingforDate">Date:<input id="userInput_date">
+		<button onclick="inputDate()">Input</button></p>
+
+		<p id="askingforWeekday"></p>
+
+		<p id="askingforWeather"></p>
+
+		<p id="askingforListicon"></p>
+
+		<p id="askingforBackground"></p>
+
+		<div id="askingforList_1"></div><div id="askingforList_2"></div>
+		<div id="askingforList_3"></div>
+		<div id="askingforList_4"></div>
+		<div id="askingforList_5"></div>
+		<div id="askingforList_6"></div>
+		<div id="askingforList_7"></div>
+		<div id="askingforList_8"></div>
+		<div id="askingforList_9"></div>
+		<div id="askingforList_10"></div>
+		
+	</section>
+	<hr>
+	<h1>Sample</h1><h3>Please DO NOT reload the page before you have photo capture this daily schedule, as it will be all gone!</h3>
+	<section id="sample">
+
+		<div id="sample_date">date</div>
+		<div id="sample_weekday">(weekday)</div>
+		<div id="sample_weather">weather</div>
+		<div id="sample_list">
+			<ol id="sample_ol">
+				<li id="list_1"></li>
+				<li id="list_2"></li>
+				<li id="list_3"></li>
+				<li id="list_4"></li>
+				<li id="list_5"></li>
+				<li id="list_6"></li>
+				<li id="list_7"></li>
+				<li id="list_8"></li>
+				<li id="list_9"></li>
+				<li id="list_10"></li>
+			</ol>
+		</div>
+
+	</section>
+
+</body>

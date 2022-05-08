@@ -1,0 +1,75 @@
+body{
+	background-color: #F7F9E2;
+	margin: 2%;
+}
+
+nav{
+	display: inline-block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-bottom: 2%;
+	background: #596C4E;
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+
+}
+nav a{
+	display: inline-block;
+	font-size: 120%;
+	color: #000000;
+	text-decoration: none;
+	font-family: Comic Sans MS;
+	background-color: #E1D8BC;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 12%;
+	transition-property: background-color, color;
+}
+nav a:hover{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+section#sample{
+	border: solid 1px #000000;
+	border-radius: 10px;
+}
+section#sample ol{
+	padding-left: 15%;
+}
+section div#sample_date{
+	display: inline-block;
+	font-size: 150%;
+	font-family: fantasy;
+	margin-top: 1%;
+	margin-left: 15%;
+}
+section div#sample_weekday{
+	display: inline-block;
+	font-size: 150%;
+	font-family: fantasy;
+	margin-top: 1%;
+}
+section div#sample_weather{
+	display: inline-block;
+	font-size: 150%;
+	font-family: fantasy;
+	margin-top: 1%;
+	margin-left: 10%;
+}
+section div#sample_list{
+	margin-left: 10%;
+	margin-right: 10%;
+	font-familt: fantasy;
+}
+section div#sample_list ol{
+	font-size: 130%;
+}
+
+
+
+
+
+
